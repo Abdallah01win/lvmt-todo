@@ -2,6 +2,7 @@
     "private": true,
     "scripts": {
         "dev": "vite",
+        "preview": "vite preview",
         "build": "vite build"
     },
     "devDependencies": {
@@ -10,5 +11,12 @@
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
         "vite": "^2.9.11"
+    },
+    "dependencies": {
+        "@vitejs/plugin-vue": "^2.3.3",
+        "autoprefixer": "^10.4.7",
+        "tailwindcss": "^3.1.4",
+        "vue": "^3.2.37",
+        "vue-loader": "^17.0.0"
     }
 }
