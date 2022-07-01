@@ -36,7 +36,10 @@
       SignUp
     </button>
     <p class="text-s text-gray-500 mt-3">
-      Already have an account? <span><a href="" class="underline">Login</a></span>
+      Already have an account?
+      <span>
+        <router-link to="/login" class="underline">Login</router-link>
+      </span>
     </p>
   </div>
 </template>

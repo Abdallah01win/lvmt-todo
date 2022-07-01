@@ -27,7 +27,10 @@
       LogIn
     </button>
     <p class="text-s text-gray-500 mt-3">
-      Don't have an account? <span><a href="" class="underline">SignUp</a></span>
+      Don't have an account?
+      <span>
+        <router-link to="/" class="underline">SignUp</router-link>
+      </span>
     </p>
   </div>
 </template>
