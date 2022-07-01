@@ -10,20 +10,9 @@
           starladder roathse. Craies vegan tousled etsy austin.
         </p>
       </div>
-      <SignupForm />
-      <!-- <LogInForm /> -->
+      <router-view />
     </div>
   </section>
 </template>
 
-<script>
-import SignupForm from "./SignupForm.vue";
-import LogInForm from "./LogInForm.vue";
-
-export default {
-  components: {
-    SignupForm,
-    LogInForm,
-  },
-};
-</script>
+<script></script>

@@ -5,6 +5,7 @@ import App from "./App.vue";
 
 // 1. Define route components.
 // These can be imported from other files
+import Signup from "./components/SignupForm.vue";
 import Login from "./components/LoginForm.vue";
 import Hero from "./components/Hero.vue";
 import About from "./components/About.vue";
@@ -14,11 +15,14 @@ import Profile from "./components/Profile.vue";
 // Each route should map to a component.
 // We'll talk about nested routes later.
 const routes = [
-  { path: '/', component: Hero },
+  { path: '/', component: Hero, children:[
+    { path: '/', component: Signup },
+    { path: '/login', component: Login },
+ ] },
   { path: '/about', component: About },
   { path: '/tasks', component: Tasks },
   { path: '/profile', component: Profile },
-  { path: '/login', component: Login },
+  
 ]
 
 // 3. Create the router instance and pass the `routes` option

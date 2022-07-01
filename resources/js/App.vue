@@ -1,6 +1,5 @@
 <template>
   <Navigation />
-  <!-- <Hero /> -->
   <router-view />
   <Footer />
 </template>
