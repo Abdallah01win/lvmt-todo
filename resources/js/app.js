@@ -5,7 +5,6 @@ import App from "./App.vue";
 
 // 1. Define route components.
 // These can be imported from other files
-import Signup from "./components/SignupForm.vue";
 import Login from "./components/LoginForm.vue";
 import Hero from "./components/Hero.vue";
 import About from "./components/About.vue";
@@ -22,7 +21,7 @@ const routes = [
   { path: '/about', component: About },
   { path: '/tasks', component: Tasks },
   { path: '/profile', component: Profile },
-  
+  { path: '/login', component: Login },
 ]
 
 // 3. Create the router instance and pass the `routes` option
