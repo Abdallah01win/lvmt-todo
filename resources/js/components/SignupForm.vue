@@ -32,13 +32,14 @@
     </div>
     <button
       class="text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg"
+      type="submit"
     >
       SignUp
     </button>
     <p class="text-s text-gray-500 mt-3">
       Already have an account?
       <span>
-        <router-link to="/login" class="underline">Login</router-link>
+        <router-link to="/log" class="underline">Login</router-link>
       </span>
     </p>
   </div>

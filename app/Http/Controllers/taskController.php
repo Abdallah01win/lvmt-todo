@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Task;
+use App\Models\tasks;
+
 class taskController extends Controller
 {
     /**
@@ -14,7 +15,7 @@ class taskController extends Controller
     public function index()
     {
         // get only the loggedin user's tasks
-        return Task::orderBy('created_at', 'DESC')->get();
+        return tasks::orderBy('created_at', 'DESC')->get();
     }
 
     /**
@@ -35,10 +36,10 @@ class taskController extends Controller
      */
     public function store(Request $request)
     {
-       $newTask = new Task;
+       /*$newTask = new tasks;
        $newTask->name = $request->task['name'];
        $newTask->save();
-       return $newTask;
+       return $newTask;*/
     }
 
     /**

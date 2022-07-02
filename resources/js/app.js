@@ -17,7 +17,7 @@ import Profile from "./components/Profile.vue";
 const routes = [
   { path: '/', component: Hero, children:[
     { path: '/', component: Signup },
-    { path: '/login', component: Login },
+    { path: '/log', component: Login },
  ] },
   { path: '/about', component: About },
   { path: '/tasks', component: Tasks },
